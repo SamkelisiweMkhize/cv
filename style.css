@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    color: rgb(55, 55, 55);
+    font-family: sans-serif;
+}
+
+nav {
+    width: 100vw;
+    height: 4rem;
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: fixed;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgb(255, 112, 136);
+    padding: .8rem;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.logo:hover {
+    font-size: 2rem;
+    background-color: whitesmoke;
+    color: rgb(255, 112, 136);
+}
+
+
+section {
+    height: 100vh;
+    border: solid 1px pink;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.introduction {
+    background-color: rgba(255, 192, 203, 0.267);
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    height: 80%;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.details {
+    flex: 3;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details h1 {
+    font-size: 4rem;
+}
+
+.details h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.details a {
+    text-decoration: none;
+    border: solid 1px rgb(255, 112, 136);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: rgb(55, 55, 55);
+    font-weight: bold;
+  }
+
+  .details a:hover {
+    background-color: rgb(255, 112, 136);
+    color: rgb(255, 255, 255);
+  }
+
+  /* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+    background-color: rgb(255, 112, 136);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    bottom: 20px;
+    right: 10rem;
+    width: 280px;
+    float: left;
+    margin-top: 15rem;
+    margin-bottom: 18rem;
+    margin-left: 12rem;
+  }
+  
+  /* The popup chat - hidden by default */
+  .chat-popup {
+    border: 3px solid #f1f1f1;
+    float: left;
+    display: flex;
+    margin-left: 50rem;
+    margin-top: -25rem;
+    box-shadow: 0 1rem 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: rgb(249, 183, 194);
+    resize: none;
+    min-height: 190px;
+  }
+  
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color: rgb(253, 234, 238);
+    outline: none;
+  }
+  
+  /* Set a style for the submit/send button */
+  .form-container .btn {
+    background-color: rgba(249, 183, 194, 0.28);
+    color: rgb(18, 16, 16);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 6px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: rgb(249, 183, 194);
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover,
+  .open-button:hover {
+    opacity: 1;
+  }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    position: relative;
+    background: #96b1b0b4;
+    margin-top: 3rem;
+    font-size: x-large;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 50px;
+    text-align: center;
+    background-color:rgba(249, 223, 227, 0.86);
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #141312;
+    font-weight: bold;
+    font-size: 5rem;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgb(249, 183, 194);
+    color: rgb(250, 245, 245);
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 112, 136, 0.492);
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(255, 112, 136);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a blue color to the author */
+  .author {
+    color: rgba(188, 153, 183, 0.918);
+  }
+  
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {
+    margin: 0 -5px;
+  }
+  
+/* Style the counter cards */
+.card {
+    box-shadow: 0 1rem 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    width: 20rem;
+    margin-left: 15rem;
+    margin-top: 5rem;
+    height: 25rem;
+    padding-top: 7rem;
+}
+  
+  .scroll {
+    margin-top: 7rem;
+    float: right;
+    margin-right: 15rem;
+    border: solid;
+  }
+  
+  .header {
+font-size: x-large;
+font-weight: bold;
+text-align: center;
+  }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer></script>
+    <title>Samkelisiwe CV</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo" onclick="myScroll('home')">S.M.</div>
+
+        <ul>
+            <li onclick="myScroll('home')">HOME</li>
+            <li onclick="myScroll('resume')">RESUME</li>
+            <li onclick="myScroll('contact')">CONTACT</li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="home">
+            <div class="introduction">
+                <div class="details">
+                    <h1>Hi There!</h1>
+                    <h2>I'm a software developer, reliable and matured team worker
+                        also adaptable to challanges. Ready to give high quality
+                        and beautiful website to life.</h2>
+
+                    <a href="./documents/SamkeMkhize.docx" class="cv">Download My Resume</a>
+                </div>
+                <div class="image">
+                    <img src="./images/Samke-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="resume">
+            <div class="slideshow-container">
+
+                <div class="mySlides">
+                  <strong>EDUCATION</strong><br><br><br>High School<br>Ukuthula High School<br><br>Tertiary<br>Thekwini TVET
+                  College <br>N6 Public Relations, (2016 - 2017)<br><br>Gauteng City College<br> IT End User Computer, NQF
+                  Level3<br><br>SpecCon<br>IT System Support NQF Level5 (02/05/2023 - Current)</span>
+                </div>
+        
+                <div class="mySlides">
+                  <strong>SKILLS</strong><br><br>Microsoft Office<br><br>Technical and typing skils<br><br>
+                  Organisatonalskills<br><br>Communication skills<br><br>HTML, CSS, Java Script, Github<br><br>Bootstrap,
+                  Photoshop
+                </div>
+        
+                <div class="mySlides">
+                  <strong>WORK EXPERIENCE</strong><br><br>Admin Assistant at servest from 07/04/2021-31/03/2022<p></p>
+                  Compiling the recruitment approval.<p></p>Payroll check and arrange thte courier for sending them to head
+                  office.<p></p>Assisting the customer relation managers with arranging their employees time sheets and pay
+                  slips.<p></p>Assisting the receptionist to operate at the reception during lunch times and on her leaves.<p>
+                  </p>Maintaining the filing room and keeping the records.<p></p>Sending and receive corespondence regarding the
+                  applications for provident fundand UIF for the employees.</samp>
+        
+                  <p class="author"> <br><br><br><br><br><strong>REFERENCE</strong><br><bt></bt>TebogoM@servest.co.za</p>
+                </div>
+        
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+        
+              </div>
+        
+              <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+            </section>
+        
+        <section id="contact">
+<div class="header">
+<u>CONTACT ME</u>
+</div>
+              <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <h3>Samkelisiwe . A Mkhize</h3><br>
+                    <p>Software Developer</p><br>
+                    <p>Available immediately</p><br>
+                     <p>Auckland Parck</p><br>
+                     <p>samkelsiwemkhize@gmail.com</p><br>
+                  </div>
+                </div>
+            
+                <div class="chat-popup" id="myForm">
+                  <form action="https://formsubmit.co/samkelsiwemkhize@gmail.com" class="form-container" method="POST">
+                    <h1>Email Me</h1>
+        
+                    <label for="msg"><b>Message</b></label>
+                    <textarea placeholder="Type message.." name="msg" required></textarea>
+        
+                    <button type="submit" class="btn">Send</button>
+                    <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+        
+                </div>
+              </div>
+              
+        </section>
+
+    </main>
+
+</body>
+
+</html>
