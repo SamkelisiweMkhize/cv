@@ -21,6 +21,7 @@ nav {
     padding-right: 2rem;
     position: fixed;
     top: 0;
+
 }
 
 nav ul {
@@ -52,7 +53,7 @@ nav ul li:hover {
 .logo:hover {
     font-size: 2rem;
     background-color: whitesmoke;
-    color: rgb(255, 112, 136);
+    color: rgb(249, 26, 63);
 }
 
 
@@ -72,7 +73,7 @@ section {
 }
 
 .introduction {
-    background-color: rgba(255, 192, 203, 0.267);
+    background-color: rgba(255, 192, 203, 0.272);
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -83,6 +84,7 @@ section {
 
 .details {
     flex: 3;
+    margin-top: 5rem;
 }
 
 .image {
@@ -105,95 +107,22 @@ section {
     margin-bottom: 3rem;
 }
 
-.details a {
+ .details a { 
     text-decoration: none;
     border: solid 1px rgb(255, 112, 136);
     padding: 1rem 2rem;
     border-radius: 1rem;
     color: rgb(55, 55, 55);
     font-weight: bold;
-  }
+  } */
 
   .details a:hover {
     background-color: rgb(255, 112, 136);
     color: rgb(255, 255, 255);
   }
 
-  /* Button used to open the chat form - fixed at the bottom of the page */
-.open-button {
-    background-color: rgb(255, 112, 136);
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.8;
-    bottom: 20px;
-    right: 10rem;
-    width: 280px;
-    float: left;
-    margin-top: 15rem;
-    margin-bottom: 18rem;
-    margin-left: 12rem;
-  }
-  
-  /* The popup chat - hidden by default */
-  .chat-popup {
-    border: 3px solid #f1f1f1;
-    float: left;
-    display: flex;
-    margin-left: 50rem;
-    margin-top: -25rem;
-    box-shadow: 0 1rem 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-  }
-  
-  /* Add styles to the form container */
-  .form-container {
-    max-width: 300px;
-    padding: 10px;
-    background-color: white;
-  }
-  
-  /* Full-width textarea */
-  .form-container textarea {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: rgb(249, 183, 194);
-    resize: none;
-    min-height: 190px;
-  }
-  
-  /* When the textarea gets focus, do something */
-  .form-container textarea:focus {
-    background-color: rgb(253, 234, 238);
-    outline: none;
-  }
-  
-  /* Set a style for the submit/send button */
-  .form-container .btn {
-    background-color: rgba(249, 183, 194, 0.28);
-    color: rgb(18, 16, 16);
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom: 6px;
-    opacity: 0.8;
-  }
-  
-  /* Add a red background color to the cancel button */
-  .form-container .cancel {
-    background-color: rgb(249, 183, 194);
-  }
-  
-  /* Add some hover effects to buttons */
-  .form-container .btn:hover,
-  .open-button:hover {
-    opacity: 1;
-  }
-  
+
+
   /* Slideshow container */
   .slideshow-container {
     position: relative;
@@ -271,18 +200,6 @@ section {
     margin: 0 -5px;
   }
   
-/* Style the counter cards */
-.card {
-    box-shadow: 0 1rem 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-    width: 20rem;
-    margin-left: 15rem;
-    margin-top: 5rem;
-    height: 25rem;
-    padding-top: 7rem;
-}
   
   .scroll {
     margin-top: 7rem;
@@ -291,8 +208,132 @@ section {
     border: solid;
   }
   
-  .header {
-font-size: x-large;
-font-weight: bold;
-text-align: center;
+
+  
+
+  .hero {
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    }
+    
+    form {
+      width: 90vw;
+      max-width: 600vw;
   }
+  
+  input-group {
+      margin-bottom: 3rem; 
+      position: relative;
+      bottom: 5rem;
+      top: 5rem;
+  }
+  
+  input, textarea { 
+  width: 50rem;
+  padding: 1rem;
+  outline: 0;
+  border: 1px solid #2f282896;
+  color: #151111d2;
+  background: transparent;
+  font-size: 15px;
+  background-color: whitesmoke;
+
+  } 
+  
+  label {
+  height: 100vh;
+  position: absolute;
+  left: 29.4rem;
+  padding: 10px;
+  color: #050404;
+  cursor: text;
+  transition: 0.2s;
+  margin-top: -2rem;
+  }
+  
+  button{
+      padding: 6px;
+      color: #0e0c0c;
+      outline: none;
+      background: transparent;
+      border: 1px solid #181616;
+      width: 9vw;
+      cursor: pointer;
+      margin-left: 40rem;
+      background-color: rgba(245, 127, 147, 0.658);
+  } 
+   
+ .end {
+  border: solid 1px rgba(251, 248, 249, 0.471);
+height: 45rem;
+background-color: rgba(255, 182, 193, 0.278);
+margin-top: 2rem;
+text-align: center;
+font-size: large;
+font-weight: bold;
+
+ } 
+  
+.me {
+font-size: xxx-large;
+text-align: center;
+font-weight: bolder;
+
+}
+      
+    
+    
+    
+        
+
+
+@media screen and (max-width: 600px) {
+
+
+  .introduction {
+    background-color: rgba(255, 192, 203, 0.267);
+    width: 30rem;
+    margin: 0 auto;
+    display: flex;
+    height: 80%;
+    border-radius: 1rem;
+    padding: 2rem;
+}  
+section {
+    height: 50%;
+    border: solid 1px pink;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+.image img {
+  width: 95px;
+  height: 30%;
+  object-fit: cover;
+
+} 
+.details a {
+  text-decoration: none;
+  border: solid 1px rgb(255, 112, 136);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  color: rgb(55, 55, 55);
+  font-weight: bold;
+
+}
+
+.details a:hover {
+  background-color: rgb(255, 112, 136);
+  color: rgb(255, 255, 255);
+}
+
+
+}
+

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="./app.js" defer></script>
+    <script src="https://kit.fontawesome.com/6d40242266.js" crossorigin="anonymous"></script>
     <title>Samkelisiwe CV</title>
 </head>
 
@@ -31,7 +32,7 @@
                         also adaptable to challanges. Ready to give high quality
                         and beautiful website to life.</h2>
 
-                    <a href="./documents/SamkeMkhize.docx" class="cv">Download My Resume</a>
+                    <a href="./documents/SamkeMkhize.docx" class="cv">Download cv</a>
                 </div>
                 <div class="image">
                     <img src="./images/Samke-removebg-preview.png" alt="">
@@ -45,14 +46,14 @@
 
                 <div class="mySlides">
                   <strong>EDUCATION</strong><br><br><br>High School<br>Ukuthula High School<br><br>Tertiary<br>Thekwini TVET
-                  College <br>N6 Public Relations, (2016 - 2017)<br><br>Gauteng City College<br> IT End User Computer, NQF
+                  College <br>N6 Public Relations, (2016 - 2017)<br><br>Gauteng City College<br> IT End User Computing, NQF
                   Level3<br><br>SpecCon<br>IT System Support NQF Level5 (02/05/2023 - Current)</span>
                 </div>
         
                 <div class="mySlides">
-                  <strong>SKILLS</strong><br><br>Microsoft Office<br><br>Technical and typing skils<br><br>
-                  Organisatonalskills<br><br>Communication skills<br><br>HTML, CSS, Java Script, Github<br><br>Bootstrap,
-                  Photoshop
+                  <strong>SKILLS</strong><br><br>Microsoft Office<br><br>Technical and typing skills<br><br>
+                  Organisatonal skills<br><br>Communication skills<br><br>HTML, CSS, Java Script, Github<br><br>Bootstrap,
+                  Photoshop, Angular, React
                 </div>
         
                 <div class="mySlides">
@@ -79,38 +80,44 @@
             </section>
         
         <section id="contact">
-<div class="header">
-<u>CONTACT ME</u>
+<div class="me">
+    Contact me
 </div>
-              <div class="row">
-                <div class="column">
-                  <div class="card">
-                    <h3>Samkelisiwe . A Mkhize</h3><br>
-                    <p>Software Developer</p><br>
-                    <p>Available immediately</p><br>
-                     <p>Auckland Parck</p><br>
-                     <p>samkelsiwemkhize@gmail.com</p><br>
-                  </div>
-                </div>
-            
-                <div class="chat-popup" id="myForm">
-                  <form action="https://formsubmit.co/samkelsiwemkhize@gmail.com" class="form-container" method="POST">
-                    <h1>Email Me</h1>
-        
-                    <label for="msg"><b>Message</b></label>
-                    <textarea placeholder="Type message.." name="msg" required></textarea>
-        
-                    <button type="submit" class="btn">Send</button>
-                    <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
-                  </form>
-        
-                </div>
-              </div>
-              
-        </section>
+<div class="end">
+<div class="hero">
+    <form action="https://formsubmit.co/samkelsiwemkhize@gmail.com" class="form-container" method="POST">
+        <!-- <input type="hidden" name="_autoresponse" value="Thank you for contacting "> -->
+        <div class="input group">
+            <input type="text" id="name" required>
+            <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+        </div>
+        <br><br>
+      
 
-    </main>
+        <div class="input group">
+            <input type="text" id="number" required>
+            <label for="number"><i class="fa-solid fa-phone"></i> Phone Number</label>
+     </div>
+      <br><br>
 
+        <div class="input group">
+            <input type="email" id="email" required>
+            <label for="email"><i class="fa-solid fa-envelope"></i> Email </label>
+        </div>
+        <br><br>
+
+        <div class="input group">
+            <textarea id="message" rows="8" required></textarea>
+            <label for="message"><i class="fa-solid fa-comments"></i> Your Message</label>
+        </div>
+    <br>
+        <button type="submit"><i class="fa-solid fa-arrow-pointer"></i> </i>SUBMIT</button>
+    </div>     
+    </form>
+</section>
+</div>
 </body>
 
 </html>
+
+   
