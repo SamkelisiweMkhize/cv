@@ -1,324 +1,120 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: whitesmoke;
-    color: rgb(55, 55, 55);
-    font-family: sans-serif;
+  background-color: whitesmoke;
+  color: rgb(55, 55, 55);
+  font-family: sans-serif;
 }
+a:hover {
+  font-size: 1rem;
+  background-color:rgba(249, 26, 63, 0.539); 
+  color: whitesmoke;
+
+}  
+
 
 nav {
-    width: 100vw;
-    height: 4rem;
-    background-color: pink;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    position: fixed;
-    top: 0;
+  width: 100vw;
+  height: 4rem;
+  background-color: pink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 99;
 
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
 }
 
 nav ul li {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 nav ul li:hover {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    background-color: rgb(255, 112, 136);
-    padding: .8rem;
-    color: whitesmoke;
-    cursor: pointer;
-    transition: 1s;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgb(255, 112, 136);
+  padding: .8rem;
+  color: whitesmoke;
+  cursor: pointer;
+  transition: 1s;
 }
 
 .logo:hover {
-    font-size: 2rem;
-    background-color: whitesmoke;
-    color: rgb(249, 26, 63);
+  font-size: 2rem;
+  background-color: whitesmoke;
+  color: rgb(249, 26, 63);
 }
 
 
 section {
-    height: 100vh;
-    border: solid 1px pink;
-    padding-top: 4rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
+  height: 100vh;
+  border: solid 1px pink;
+  padding-top: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
 }
 
 #home {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .introduction {
-    background-color: rgba(255, 192, 203, 0.272);
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    height: 80%;
-    border-radius: 1rem;
-    padding: 2rem;
+  background-color: rgba(255, 192, 203, 0.272);
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  height: 80%;
+  border-radius: 1rem;
+  padding: 2rem;
 }
 
 .details {
-    flex: 3;
-    margin-top: 5rem;
+  flex: 3;
+  margin-top: 5rem;
 }
 
 .image {
-    flex: 1;
+  flex: 1;
 }
 
 .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .details h1 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 .details h2 {
-    font-size: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
- .details a { 
-    text-decoration: none;
-    border: solid 1px rgb(255, 112, 136);
-    padding: 1rem 2rem;
-    border-radius: 1rem;
-    color: rgb(55, 55, 55);
-    font-weight: bold;
-  } */
-
-  .details a:hover {
-    background-color: rgb(255, 112, 136);
-    color: rgb(255, 255, 255);
-  }
-
-
-
-  /* Slideshow container */
-  .slideshow-container {
-    position: relative;
-    background: #96b1b0b4;
-    margin-top: 3rem;
-    font-size: x-large;
-  }
-  
-  /* Slides */
-  .mySlides {
-    display: none;
-    padding: 50px;
-    text-align: center;
-    background-color:rgba(249, 223, 227, 0.86);
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: #141312;
-    font-weight: bold;
-    font-size: 5rem;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgb(249, 183, 194);
-    color: rgb(250, 245, 245);
-  }
-  
-  /* The dot/bullet/indicator container */
-  .dot-container {
-    text-align: center;
-    padding: 20px;
-    background: rgba(255, 112, 136, 0.492);
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: rgb(255, 112, 136);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  /* Add a blue color to the author */
-  .author {
-    color: rgba(188, 153, 183, 0.918);
-  }
-  
-  
-  /* Remove extra left and right margins, due to padding */
-  .row {
-    margin: 0 -5px;
-  }
-  
-  
-  .scroll {
-    margin-top: 7rem;
-    float: right;
-    margin-right: 15rem;
-    border: solid;
-  }
-  
-
-  
-
-  .hero {
-    width: 100vw;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    }
-    
-    form {
-      width: 90vw;
-      max-width: 600vw;
-  }
-  
-  input-group {
-      margin-bottom: 3rem; 
-      position: relative;
-      bottom: 5rem;
-      top: 5rem;
-  }
-  
-  input, textarea { 
-  width: 50rem;
-  padding: 1rem;
-  outline: 0;
-  border: 1px solid #2f282896;
-  color: #151111d2;
-  background: transparent;
-  font-size: 15px;
-  background-color: whitesmoke;
-
-  } 
-  
-  label {
-  height: 100vh;
-  position: absolute;
-  left: 29.4rem;
-  padding: 10px;
-  color: #050404;
-  cursor: text;
-  transition: 0.2s;
-  margin-top: -2rem;
-  }
-  
-  button{
-      padding: 6px;
-      color: #0e0c0c;
-      outline: none;
-      background: transparent;
-      border: 1px solid #181616;
-      width: 9vw;
-      cursor: pointer;
-      margin-left: 40rem;
-      background-color: rgba(245, 127, 147, 0.658);
-  } 
-   
- .end {
-  border: solid 1px rgba(251, 248, 249, 0.471);
-height: 45rem;
-background-color: rgba(255, 182, 193, 0.278);
-margin-top: 2rem;
-text-align: center;
-font-size: large;
-font-weight: bold;
-
- } 
-  
-.me {
-font-size: xxx-large;
-text-align: center;
-font-weight: bolder;
-
-}
-      
-    
-    
-    
-        
-
-
-@media screen and (max-width: 600px) {
-
-
-  .introduction {
-    background-color: rgba(255, 192, 203, 0.267);
-    width: 30rem;
-    margin: 0 auto;
-    display: flex;
-    height: 80%;
-    border-radius: 1rem;
-    padding: 2rem;
-}  
-section {
-    height: 50%;
-    border: solid 1px pink;
-    padding-top: 4rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-}
-.image img {
-  width: 95px;
-  height: 30%;
-  object-fit: cover;
-
-} 
 .details a {
   text-decoration: none;
   border: solid 1px rgb(255, 112, 136);
@@ -326,14 +122,330 @@ section {
   border-radius: 1rem;
   color: rgb(55, 55, 55);
   font-weight: bold;
-
 }
 
-.details a:hover {
+*/ .details a:hover {
   background-color: rgb(255, 112, 136);
   color: rgb(255, 255, 255);
 }
 
 
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin-top: 3rem;
+  font-size: x-large;
 }
 
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 50px;
+  text-align: left;
+  background-color: rgba(249, 223, 227, 0.86);
+  padding-left: 9rem;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #141312;
+  font-weight: bold;
+  font-size: 5rem;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgb(249, 183, 194);
+  color: rgb(250, 245, 245);
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 112, 136, 0.492);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(255, 112, 136);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: rgba(188, 153, 183, 0.918);
+}
+
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+}
+
+
+.scroll {
+  margin-top: 7rem;
+  float: right;
+  margin-right: 15rem;
+  border: solid;
+}
+
+
+
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-position: left;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 6rem;
+
+
+}
+
+form {
+  width: 90vw;
+  max-width: 600vw;
+  padding-bottom: 6rem;
+}
+input-group {
+    margin-bottom: 3rem; 
+    position: relative;
+    bottom: 5rem;
+    top: 5rem;
+}
+
+input, textarea { 
+width: 47rem;
+padding: 1rem;
+outline: 0;
+border: 1px solid #100e0e96;
+background: transparent;
+font-size: 15px;
+margin-top: 3rem;
+bottom: -8rem;
+background-color: whitesmoke;
+} 
+
+label {
+height: 100vh;
+position: absolute;
+left: 31rem;
+padding: 10px;
+color: #282525;
+cursor: text;
+transition: 0.2s;
+margin-top: 1rem;
+}
+
+button{
+    padding: 5px;
+    color: #1c1a1a;
+    outline: none;
+    background: transparent;
+    border: 1px solid #070707;
+    width: 9vw;
+    cursor: pointer;
+    margin-left: 37.5rem;
+    background-color: whitesmoke;
+}
+
+button:hover {
+  font-size: 1rem;
+  background-color: rgba(249, 26, 63, 0.467);;
+  color: rgb(4, 3, 3);
+}
+
+.end {
+  border: solid 1px rgba(251, 248, 249, 0.471);
+  height: 45rem;
+  background-color: rgba(255, 182, 193, 0.278);
+  margin-top: 2rem;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+
+}
+
+.me {
+  font-size: xxx-large;
+  text-align: center;
+  font-weight: bolder;
+
+}
+
+
+
+@media screen and (max-width: 576px) {
+  .logo {
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+  }
+
+  section {
+    height: 100%;
+    border: solid 1px pink;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+  }
+
+
+
+  nav {
+    width: 100vw;
+    height: 4rem;
+     position: fixed;
+    top: 0;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .introduction {
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    border-radius: 1rem;
+    padding: .5rem;
+  }
+
+  .slideshow-container {
+    font-size: 1.5rem;
+  }
+  .mySlides {
+    display: none;
+    padding: 50px;
+    text-align: left;
+    font-size: medium;
+  }
+
+  .next {
+    border-radius: 1px 0 0 1px;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 2px;
+    color: #141312;
+    font-size: 1.5rem;
+    border-radius: 0 1px 1px 0;
+  
+  }
+  .image img {
+    width: 95px;
+    height: 9rem;
+    object-fit: cover;
+
+  }
+
+
+  .hero {
+    width: 100vw;
+    height: 50vh;
+    align-items: left;
+    justify-content: left;
+
+  }
+
+
+  input-group {
+    margin-bottom: -9rem;
+    /* top: 2rem; */
+  }
+
+  input,
+  textarea {
+    width: 80%;
+    margin-bottom: 2rem;
+    left: 2rem;
+    margin-top: rem;
+
+  }
+
+  label {
+    left: 4rem;
+    margin-top: 2rem;
+  }
+
+  button {
+    padding: 6px;
+    width: 18vw;
+    margin-left: 10rem;
+
+  }
+
+  .end {
+    height: 35rem;
+    margin-top: 2rem;
+    margin-bottom: 9rem;
+
+  }
+
+
+
+.details {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.details h1 {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.details h2 {
+  font-size: 1rem;
+  font-weight: 100;
+  margin-top: 1rem;
+}
+
+.details a { 
+  padding: .5rem 1rem;
+}
+.me {
+  font-size: x-large;
+  text-align: center;
+  font-weight: bolder;
+
+}
+}
