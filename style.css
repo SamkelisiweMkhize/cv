@@ -46,6 +46,8 @@ nav ul li {
 
 nav ul li:hover {
   font-weight: bold;
+  font-size: 1rem;
+  transition: 1s;
 }
 
 .logo {
@@ -106,6 +108,7 @@ section {
 }
 
 .details h1 {
+  
   font-size: 4rem;
 }
 
@@ -113,6 +116,7 @@ section {
   font-size: 2rem;
   margin-top: 2rem;
   margin-bottom: 3rem;
+  
 }
 
 .details a {
@@ -122,10 +126,18 @@ section {
   border-radius: 1rem;
   color: rgb(55, 55, 55);
   font-weight: bold;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 1), 
+               0px 0px 10px rgba(255, 255, 255, 1), 
+			   0px 0px 15px rgba(255, 255, 255, 1),
+			   0px 0px 20px rgb(242, 245, 241),
+			   0px 0px 30px rgb(224, 218, 222),
+			   0px 0px 40px rgb(244, 246, 244),
+			   0px 0px 55px rgb(234, 236, 233),
+			   0px 0px 75px rgb(235, 237, 234);
 }
 
 */ .details a:hover {
-  background-color: rgb(255, 112, 136);
+  background-color: rgb(251, 93, 120);
   color: rgb(255, 255, 255);
 }
 
@@ -227,7 +239,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 6rem;
+  padding-bottom: 14rem;
 
 
 }
@@ -236,6 +248,14 @@ form {
   width: 90vw;
   max-width: 600vw;
   padding-bottom: 6rem;
+  border: solid;
+  border-radius: 50px;
+  border-color:rgba(249, 26, 63, 0.394);
+  width: 49rem;
+  height: 39rem;
+}
+form :hover{
+  font-size: 1.3rem; 
 }
 input-group {
     margin-bottom: 3rem; 
@@ -277,11 +297,19 @@ button{
     cursor: pointer;
     margin-left: 37.5rem;
     background-color: whitesmoke;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1), 
+                 0px 0px 10px rgba(255, 255, 255, 1), 
+                 0px 0px 15px rgba(255, 255, 255, 1),
+                 0px 0px 20px rgb(242, 245, 241),
+                 0px 0px 30px rgb(224, 218, 222),
+                 0px 0px 40px rgb(244, 246, 244),
+                 0px 0px 55px rgb(234, 236, 233),
+                 0px 0px 75px rgb(235, 237, 234);
 }
 
 button:hover {
   font-size: 1rem;
-  background-color: rgba(249, 26, 63, 0.467);;
+  background-color: rgba(249, 26, 63, 0.467);
   color: rgb(4, 3, 3);
 }
 
@@ -300,9 +328,20 @@ button:hover {
   font-size: xxx-large;
   text-align: center;
   font-weight: bolder;
-
+  background: rgba(249, 26, 63, 0.326);
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 1), 
+               0px 0px 10px rgba(255, 255, 255, 1), 
+			   0px 0px 15px rgba(255, 255, 255, 1),
+			   0px 0px 20px rgb(242, 245, 241),
+			   0px 0px 30px rgb(224, 218, 222),
+			   0px 0px 40px rgb(244, 246, 244),
+			   0px 0px 55px rgb(234, 236, 233),
+			   0px 0px 75px rgb(235, 237, 234);
+         justify-content: space-between;
 }
-
+.me:hover{
+  font-size: 4rem;
+}
 
 
 @media screen and (max-width: 576px) {
@@ -325,7 +364,8 @@ button:hover {
     height: 4rem;
      position: fixed;
     top: 0;
-    position: fixed;
+    position: sticky;
+    z-index: 99;
   }
 
   nav ul {
@@ -383,7 +423,9 @@ button:hover {
     object-fit: cover;
 
   }
-
+.location {
+font-weight: bold;
+}
 
   .hero {
     width: 100vw;
