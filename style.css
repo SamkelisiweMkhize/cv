@@ -123,6 +123,7 @@ section {
   text-decoration: none;
   border: solid 1px rgb(255, 112, 136);
   padding: 1rem 2rem;
+  background-color:rgb(255, 112, 136);
   border-radius: 1rem;
   color: rgb(55, 55, 55);
   font-weight: bold;
@@ -136,7 +137,7 @@ section {
 			   0px 0px 75px rgb(235, 237, 234);
 }
 
-*/ .details a:hover {
+.details a:hover {
   background-color: rgb(251, 93, 120);
   color: rgb(255, 255, 255);
 }
@@ -188,6 +189,7 @@ section {
 .next:hover {
   background-color: rgb(249, 183, 194);
   color: rgb(250, 245, 245);
+  font-size: xx-large;
 }
 
 /* The dot/bullet/indicator container */
@@ -212,6 +214,7 @@ section {
 /* Add a blue color to the author */
 .author {
   color: rgba(188, 153, 183, 0.918);
+  margin-top: 3rem;
 }
 
 
@@ -245,18 +248,18 @@ section {
 }
 
 form {
-  width: 90vw;
+  width: 85vw;
   max-width: 600vw;
   padding-bottom: 6rem;
-  border: solid;
-  border-radius: 50px;
-  border-color:rgba(249, 26, 63, 0.394);
-  width: 49rem;
-  height: 39rem;
+ padding-right: 3rem;
+
 }
+ 
+
 form :hover{
   font-size: 1.3rem; 
 }
+
 input-group {
     margin-bottom: 3rem; 
     position: relative;
@@ -274,6 +277,7 @@ font-size: 15px;
 margin-top: 3rem;
 bottom: -8rem;
 background-color: whitesmoke;
+box-shadow: 3px 3px 5px 0px rgb(10, 10, 10);
 } 
 
 label {
@@ -288,7 +292,8 @@ margin-top: 1rem;
 }
 
 button{
-    padding: 5px;
+    padding: 10px;
+    margin-top: 1rem;
     color: #1c1a1a;
     outline: none;
     background: transparent;
@@ -296,7 +301,7 @@ button{
     width: 9vw;
     cursor: pointer;
     margin-left: 37.5rem;
-    background-color: whitesmoke;
+    background-color: rgb(251, 93, 120);
     text-shadow: 0px 0px 5px rgba(255, 255, 255, 1), 
                  0px 0px 10px rgba(255, 255, 255, 1), 
                  0px 0px 15px rgba(255, 255, 255, 1),
@@ -357,8 +362,6 @@ button:hover {
     padding-bottom: 1rem;
   }
 
-
-
   nav {
     width: 100vw;
     height: 4rem;
@@ -372,7 +375,6 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
   }
 
   .introduction {
@@ -389,7 +391,6 @@ button:hover {
     font-size: 1rem;
     background-color:rgba(249, 26, 63, 0.539); 
     color: whitesmoke;
-  
   }  
   .slideshow-container {
     font-size: 1.5rem;
@@ -436,10 +437,14 @@ font-weight: bold;
   }
 
   form {
-    width: 90vw;
-    max-width: 600vw;
-    padding-top: 17rem;
+    width: 49rem;
+    height: 20rem;
+    padding-top: 6rem;
   }
+  form :hover{
+    font-size: 1.3rem; 
+  }
+  
   input-group {
       margin-bottom: 3rem; 
       position: relative;
@@ -470,8 +475,6 @@ font-weight: bold;
   margin-top: 1rem;
   }
   
-  
-
   button {
     padding: 6px;
     width: 18vw;
@@ -490,10 +493,7 @@ font-weight: bold;
     height: 35rem;
     margin-top: 2rem;
     margin-bottom: 9rem;
-
   }
-
-
 
 .details {
     margin-top: 1rem;
