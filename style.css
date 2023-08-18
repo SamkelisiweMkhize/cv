@@ -9,12 +9,13 @@ body {
   color: rgb(55, 55, 55);
   font-family: sans-serif;
 }
+
 a:hover {
   font-size: 1rem;
-  background-color:rgba(249, 26, 63, 0.539); 
+  background-color: rgba(249, 26, 63, 0.539);
   color: whitesmoke;
 
-}  
+}
 
 
 nav {
@@ -99,6 +100,7 @@ section {
 
 .image {
   flex: 1;
+  flex-direction: column;
 }
 
 .image img {
@@ -108,7 +110,7 @@ section {
 }
 
 .details h1 {
-  
+
   font-size: 4rem;
 }
 
@@ -116,25 +118,25 @@ section {
   font-size: 2rem;
   margin-top: 2rem;
   margin-bottom: 3rem;
-  
+
 }
 
 .details a {
   text-decoration: none;
   border: solid 1px rgb(255, 112, 136);
   padding: 1rem 2rem;
-  background-color:rgb(255, 112, 136);
+  background-color: rgb(255, 112, 136);
   border-radius: 1rem;
   color: rgb(55, 55, 55);
   font-weight: bold;
-  text-shadow: 0px 0px 5px rgba(255, 255, 255, 1), 
-               0px 0px 10px rgba(255, 255, 255, 1), 
-			   0px 0px 15px rgba(255, 255, 255, 1),
-			   0px 0px 20px rgb(242, 245, 241),
-			   0px 0px 30px rgb(224, 218, 222),
-			   0px 0px 40px rgb(244, 246, 244),
-			   0px 0px 55px rgb(234, 236, 233),
-			   0px 0px 75px rgb(235, 237, 234);
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 1),
+    0px 0px 10px rgba(255, 255, 255, 1),
+    0px 0px 15px rgba(255, 255, 255, 1),
+    0px 0px 20px rgb(242, 245, 241),
+    0px 0px 30px rgb(224, 218, 222),
+    0px 0px 40px rgb(244, 246, 244),
+    0px 0px 55px rgb(234, 236, 233),
+    0px 0px 75px rgb(235, 237, 234);
 }
 
 .details a:hover {
@@ -157,7 +159,7 @@ section {
   padding: 50px;
   text-align: left;
   background-color: rgba(249, 223, 227, 0.86);
-  padding-left: 9rem;
+  padding-left: 7rem;
 }
 
 /* Next & previous buttons */
@@ -168,10 +170,10 @@ section {
   top: 50%;
   width: auto;
   margin-top: -30px;
-  padding: 16px;
+  padding: 10px;
   color: #141312;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 3rem;
   border-radius: 0 3px 3px 0;
   user-select: none;
 
@@ -214,7 +216,7 @@ section {
 /* Add a blue color to the author */
 .author {
   color: rgba(188, 153, 183, 0.918);
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 
@@ -232,7 +234,114 @@ section {
 }
 
 
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 2rem;
+}
 
+.middle {
+  margin-top: 2.3rem;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: left;
+  color: rgb(251, 93, 120);
+}
+
+/* Individual bars */
+.bar-5 {
+  width: 90%;
+  height: 18px;
+  background-color: rgba(251, 93, 119, 0.421)
+}
+
+.bar-4 {
+  width: 95%;
+  height: 18px;
+  background-color: rgba(251, 93, 119, 0.423)
+}
+
+.bar-3 {
+  width: 40%;
+  height: 18px;
+  background-color: rgba(251, 93, 119, 0.526)
+}
+
+.bar-2 {
+  width: 50%;
+  height: 18px;
+  background-color: rgba(251, 93, 119, 0.489)
+}
+
+.bar-1 {
+  width: 40%;
+  height: 18px;
+  background-color: rgba(251, 93, 119, 0.519)
+}
+.sam{
+display: inline;
+}
+.samm {
+  border: solid;
+  background-color: rgba(251, 93, 119, 0.519);
+}
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  padding: 10px;
+}
 
 .hero {
   width: 100vw;
@@ -244,72 +353,72 @@ section {
   justify-content: center;
   padding-bottom: 14rem;
 
-
 }
 
 form {
   width: 85vw;
   max-width: 600vw;
   padding-bottom: 6rem;
- padding-right: 3rem;
+  padding-right: 3rem;
 
 }
- 
 
-form :hover{
-  font-size: 1.3rem; 
+
+form :hover {
+  font-size: 1.3rem;
 }
 
 input-group {
-    margin-bottom: 3rem; 
-    position: relative;
-    bottom: 5rem;
-    top: 5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  bottom: 5rem;
+  top: 5rem;
 }
 
-input, textarea { 
-width: 47rem;
-padding: 1rem;
-outline: 0;
-border: 1px solid #100e0e96;
-background: transparent;
-font-size: 15px;
-margin-top: 3rem;
-bottom: -8rem;
-background-color: whitesmoke;
-box-shadow: 3px 3px 5px 0px rgb(10, 10, 10);
-} 
+input,
+textarea {
+  width: 47rem;
+  padding: 1rem;
+  outline: 0;
+  border: 1px solid #100e0e96;
+  background: transparent;
+  font-size: 15px;
+  margin-top: 3rem;
+  bottom: -8rem;
+  background-color: whitesmoke;
+  box-shadow: 3px 3px 5px 0px rgb(10, 10, 10);
+}
 
 label {
-height: 100vh;
-position: absolute;
-left: 31rem;
-padding: 10px;
-color: #282525;
-cursor: text;
-transition: 0.2s;
-margin-top: 1rem;
+  height: 100vh;
+  position: absolute;
+  left: 30rem;
+  padding: 10px;
+  color: #282525;
+  cursor: text;
+  transition: 0.2s;
+  margin-top: 1rem;
 }
 
-button{
-    padding: 10px;
-    margin-top: 1rem;
-    color: #1c1a1a;
-    outline: none;
-    background: transparent;
-    border: 1px solid #070707;
-    width: 9vw;
-    cursor: pointer;
-    margin-left: 37.5rem;
-    background-color: rgb(251, 93, 120);
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1), 
-                 0px 0px 10px rgba(255, 255, 255, 1), 
-                 0px 0px 15px rgba(255, 255, 255, 1),
-                 0px 0px 20px rgb(242, 245, 241),
-                 0px 0px 30px rgb(224, 218, 222),
-                 0px 0px 40px rgb(244, 246, 244),
-                 0px 0px 55px rgb(234, 236, 233),
-                 0px 0px 75px rgb(235, 237, 234);
+button {
+  padding: 10px;
+  margin-top: 1rem;
+  color: #1c1a1a;
+  outline: none;
+  background: transparent;
+  border: 1px solid #070707;
+  width: 9vw;
+  cursor: pointer;
+  margin-left: 37.5rem;
+  background-color: rgb(251, 93, 120);
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 1),
+    0px 0px 10px rgba(255, 255, 255, 1),
+    0px 0px 15px rgba(255, 255, 255, 1),
+    0px 0px 20px rgb(242, 245, 241),
+    0px 0px 30px rgb(224, 218, 222),
+    0px 0px 40px rgb(244, 246, 244),
+    0px 0px 55px rgb(234, 236, 233),
+    0px 0px 75px rgb(235, 237, 234);
 }
 
 button:hover {
@@ -334,17 +443,18 @@ button:hover {
   text-align: center;
   font-weight: bolder;
   background: rgba(249, 26, 63, 0.326);
-  text-shadow: 0px 0px 5px rgba(255, 255, 255, 1), 
-               0px 0px 10px rgba(255, 255, 255, 1), 
-			   0px 0px 15px rgba(255, 255, 255, 1),
-			   0px 0px 20px rgb(242, 245, 241),
-			   0px 0px 30px rgb(224, 218, 222),
-			   0px 0px 40px rgb(244, 246, 244),
-			   0px 0px 55px rgb(234, 236, 233),
-			   0px 0px 75px rgb(235, 237, 234);
-         justify-content: space-between;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 1),
+    0px 0px 10px rgba(255, 255, 255, 1),
+    0px 0px 15px rgba(255, 255, 255, 1),
+    0px 0px 20px rgb(242, 245, 241),
+    0px 0px 30px rgb(224, 218, 222),
+    0px 0px 40px rgb(244, 246, 244),
+    0px 0px 55px rgb(234, 236, 233),
+    0px 0px 75px rgb(235, 237, 234);
+  justify-content: space-between;
 }
-.me:hover{
+
+.me:hover {
   font-size: 4rem;
 }
 
@@ -365,7 +475,7 @@ button:hover {
   nav {
     width: 100vw;
     height: 4rem;
-     position: fixed;
+    position: fixed;
     top: 0;
     position: sticky;
     z-index: 99;
@@ -374,7 +484,7 @@ button:hover {
   nav ul {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
   }
 
   .introduction {
@@ -387,14 +497,17 @@ button:hover {
     border-radius: 1rem;
     padding: .5rem;
   }
+
   a:hover {
     font-size: 1rem;
-    background-color:rgba(249, 26, 63, 0.539); 
+    background-color: rgba(249, 26, 63, 0.539);
     color: whitesmoke;
-  }  
+  }
+
   .slideshow-container {
     font-size: 1.5rem;
   }
+
   .mySlides {
     display: none;
     padding: 50px;
@@ -405,7 +518,7 @@ button:hover {
   .next {
     border-radius: 1px 0 0 1px;
   }
-  
+
   .prev,
   .next {
     cursor: pointer;
@@ -416,17 +529,19 @@ button:hover {
     color: #141312;
     font-size: 1.5rem;
     border-radius: 0 1px 1px 0;
-  
+
   }
+
   .image img {
     width: 95px;
     height: 9rem;
     object-fit: cover;
 
   }
-.location {
-font-weight: bold;
-}
+
+  .location {
+    font-weight: bold;
+  }
 
   .hero {
     width: 100vw;
@@ -441,40 +556,42 @@ font-weight: bold;
     height: 20rem;
     padding-top: 6rem;
   }
-  form :hover{
-    font-size: 1.3rem; 
+
+  form :hover {
+    font-size: 1.3rem;
   }
-  
+
   input-group {
-      margin-bottom: 3rem; 
-      position: relative;
-      bottom: 5rem;
-      top: 5rem;
+    margin-bottom: 3rem;
+    position: relative;
+    bottom: 5rem;
+    top: 5rem;
   }
-  
-  input, textarea { 
-  width: 75%;
-  padding: 6px;
-  outline: 0;
-  border: 1px solid #100e0e96;
-  background: transparent;
-  font-size: 15px;
-  margin-top: 3rem;
-  bottom: -8rem;
-  background-color: whitesmoke;
-  } 
-  
+
+  input,
+  textarea {
+    width: 75%;
+    padding: 6px;
+    outline: 0;
+    border: 1px solid #100e0e96;
+    background: transparent;
+    font-size: 15px;
+    margin-top: 3rem;
+    bottom: -8rem;
+    background-color: whitesmoke;
+  }
+
   label {
-  height: 100vh;
-  position: absolute;
-  left: 5rem;
-  padding: 10px;
-  color: #282525;
-  cursor: text;
-  transition: 0.2s;
-  margin-top: 1rem;
+    height: 100vh;
+    position: absolute;
+    left: 5rem;
+    padding: 10px;
+    color: #282525;
+    cursor: text;
+    transition: 0.2s;
+    margin-top: 1rem;
   }
-  
+
   button {
     padding: 6px;
     width: 18vw;
@@ -482,12 +599,14 @@ font-weight: bold;
     margin-top: 5px;
 
   }
+
   button:hover {
     font-size: 1rem;
-    background-color: rgba(249, 26, 63, 0.467);;
+    background-color: rgba(249, 26, 63, 0.467);
+    ;
     color: rgb(4, 3, 3);
   }
-  
+
 
   .end {
     height: 35rem;
@@ -495,29 +614,47 @@ font-weight: bold;
     margin-bottom: 9rem;
   }
 
-.details {
+  .details {
     margin-top: 1rem;
     text-align: center;
-}
+  }
 
-.details h1 {
-  font-size: 1.5rem;
-  font-weight: 100;
-}
+  .details h1 {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
 
-.details h2 {
-  font-size: 1rem;
-  font-weight: 100;
-  margin-top: 1rem;
-}
+  .details h2 {
+    font-size: 1rem;
+    font-weight: 100;
+    margin-top: 1rem;
+  }
 
-.details a { 
-  padding: .5rem 1rem;
-}
-.me {
-  font-size: x-large;
-  text-align: center;
-  font-weight: bolder;
+  .details a {
+    padding: .5rem 1rem;
+  }
 
-}
+  .me {
+    font-size: x-large;
+    text-align: center;
+    font-weight: bolder;
+
+  }
+
+  .side,
+  .middle {
+    width: 50%;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .column {
+    width: 50%;
+  }
+
+  .column {
+    width: 100%;
+  }
 }
