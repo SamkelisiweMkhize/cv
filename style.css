@@ -461,8 +461,9 @@ button:hover {
 
 @media screen and (max-width: 576px) {
   .logo {
-    font-size: 1.5rem;
-    padding: 1rem .5rem;
+    font-size: 1rem;
+    padding: .5px .5px;
+    display: none;
   }
 
   section {
@@ -479,6 +480,12 @@ button:hover {
     top: 0;
     position: sticky;
     z-index: 99;
+    float: left;
+    align-items: left;
+    padding-left: .01rem;
+    margin-right: 3rem;
+    
+
   }
 
   nav ul {
