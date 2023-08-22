@@ -343,6 +343,12 @@ h1 {
   padding: 10px;
 }
 
+.ref {
+  margin-top: 2rem;
+  text-align: center;
+  
+}
+
 .hero {
   width: 100vw;
   height: 100vh;
