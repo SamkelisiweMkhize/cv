@@ -297,13 +297,16 @@ section {
   height: 18px;
   background-color: rgba(251, 93, 119, 0.519)
 }
-.sam{
-display: inline;
+
+.sam {
+  display: inline;
 }
+
 .samm {
   border: solid;
   background-color: rgba(251, 93, 119, 0.519);
 }
+
 /* Center website */
 .main {
   max-width: 1000px;
@@ -321,7 +324,7 @@ h1 {
 
 /* Add padding BETWEEN each column */
 .row,
-.row > .column {
+.row>.column {
   padding: 8px;
 }
 
@@ -331,7 +334,7 @@ h1 {
   width: 25%;
 }
 
-/* Clear floats after rows */ 
+/* Clear floats after rows */
 .row:after {
   content: "";
   display: table;
@@ -346,7 +349,7 @@ h1 {
 .ref {
   margin-top: 2rem;
   text-align: center;
-  
+
 }
 
 .hero {
@@ -463,9 +466,14 @@ button:hover {
 .me:hover {
   font-size: 4rem;
 }
+
 .location {
   font-weight: bold;
 }
+
+
+
+
 
 
 @media screen and (max-width: 576px) {
@@ -493,7 +501,7 @@ button:hover {
     align-items: left;
     padding-left: .01rem;
     margin-right: 3rem;
-    
+
 
   }
 
