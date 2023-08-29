@@ -596,49 +596,20 @@ button:hover {
     height: 50vh;
     align-items: left;
     justify-content: left;
+    padding-top: 15git addrem;
 
   }
 
-  form {
-    width: 49rem;
-    height: 20rem;
-    padding-top: 6rem;
-  }
-
-  form :hover {
-    font-size: 1.3rem;
-  }
-
-  input-group {
-    margin-bottom: 3rem;
+  .input-text {
+    background-color: white;
+    font-family: Arial;
+    margin-bottom: 8px;
+    padding: 8px 4px;
     position: relative;
-    bottom: 5rem;
-    top: 5rem;
-  }
-
-  input,
-  textarea {
-    width: 75%;
-    padding: 6px;
-    outline: 0;
-    border: 1px solid #100e0e96;
-    background: transparent;
-    font-size: 15px;
-    margin-top: 3rem;
-    bottom: -8rem;
-    background-color: whitesmoke;
-  }
-
-  label {
-    height: 100vh;
-    position: absolute;
-    left: 5rem;
-    padding: 10px;
-    color: #282525;
-    cursor: text;
-    transition: 0.2s;
-    margin-top: 1rem;
-  }
+    width: 15rem;
+    z-index: 3;
+    margin-left: 3rem;
+    }
 
 
 
@@ -646,7 +617,8 @@ button:hover {
     padding: 6px;
     width: 18vw;
     margin-left: 12rem;
-    margin-top: 5px;
+    margin-top: 2px;
+    margin-left: 1rem;
 
   }
 
