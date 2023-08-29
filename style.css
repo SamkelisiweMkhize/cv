@@ -375,14 +375,12 @@ padding: 4px 0;
 position: relative; 
 }
 .form-block {
-border: 1px solid #cccccc;
 margin-bottom: 8px;
 padding: 8px 12px; 
 }
 
 .input-text {
 background-color: white;
-border: 1px solid #cccccc;
 font-family: Arial;
 margin-bottom: 8px;
 padding: 8px 4px;
@@ -393,7 +391,7 @@ margin-left: 3rem;
 }
 
 .input-text:focus {
-box-shadow: 0 0 6px rgba(0, 200, 222, 0.25);
+border: none;
 background-color: #fafafa;
 }
 
@@ -405,6 +403,7 @@ bottom: 0;
 left: 3rem;
 z-index: 1; 
 }
+
 
 .input-text:focus + .label, .input-text:invalid + .label {
 bottom: 95%;
