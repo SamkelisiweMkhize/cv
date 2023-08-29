@@ -363,51 +363,76 @@ h1 {
   padding-bottom: 14rem;
 
 }
+*, *:after, *:before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: arial;
+}
+.form-row {
+margin-bottom: 20px;
+padding: 4px 0;
+position: relative; 
+}
+.form-block {
+border: 1px solid #cccccc;
+margin-bottom: 8px;
+padding: 8px 12px; 
+}
 
-form {
-  width: 85vw;
-  max-width: 600vw;
-  padding-bottom: 6rem;
-  padding-right: 3rem;
+.input-text {
+background-color: white;
+border: 1px solid #cccccc;
+font-family: Arial;
+margin-bottom: 8px;
+padding: 8px 4px;
+position: relative;
+width: 50rem;
+z-index: 3;
+margin-left: 3rem;
+}
 
+.input-text:focus {
+box-shadow: 0 0 6px rgba(0, 200, 222, 0.25);
+background-color: #fafafa;
+}
+
+.label {
+position: absolute;
+opacity: 0;
+transition: .2s bottom, .2s opacity;
+bottom: 0;
+left: 3rem;
+z-index: 1; 
+}
+
+.input-text:focus + .label, .input-text:invalid + .label {
+bottom: 95%;
+font-family: arial;
+font-size: 14px;
+line-height: 1;
+opacity: 1;
+padding: 4px; 
+}
+
+.input-text:invalid {
+border-left: 10px solid #f00; 
+}
+
+.input-text:invalid + .label::after {
+color: #f00;
+content: "X";
+font-family: arial;
+font-size: 14px;
+line-height: 1;
+padding-left: 12px; }
+
+.p {
+text-align: center;
+padding-top: 50px;
 }
 
 
-form :hover {
-  font-size: 1.3rem;
-}
-
-input-group {
-  margin-bottom: 3rem;
-  position: relative;
-  bottom: 5rem;
-  top: 5rem;
-}
-
-input,
-textarea {
-  width: 47rem;
-  padding: 1rem;
-  outline: 0;
-  border: 1px solid #100e0e96;
-  background: transparent;
-  font-size: 15px;
-  margin-top: 3rem;
-  bottom: -8rem;
-  background-color: whitesmoke;
-  box-shadow: 3px 3px 5px 0px rgb(10, 10, 10);
-}
-
-label {
-  height: 100vh;
-  position: absolute;
-  left: 30rem;
-  padding: 10px;
-  color: #282525;
-  cursor: text;
-  transition: 0.2s;
-  margin-top: 1rem;
-}
 
 button {
   padding: 10px;
@@ -615,6 +640,8 @@ button:hover {
     transition: 0.2s;
     margin-top: 1rem;
   }
+
+
 
   button {
     padding: 6px;
