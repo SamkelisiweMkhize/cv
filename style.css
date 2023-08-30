@@ -601,14 +601,8 @@ button:hover {
   }
 
   .input-text {
-    background-color: white;
-    font-family: Arial;
-    margin-bottom: 8px;
-    padding: 8px 4px;
-    position: relative;
     width: 15rem;
-    z-index: 3;
-    margin-left: 3rem;
+    
     }
 
 
