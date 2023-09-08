@@ -401,8 +401,6 @@ h1 {
 
 
 .input-text:invalid + .label:after {
-  color: rgb(250, 247, 247);
-  /* content: "."; */
   font-family: arial;
   font-size: 14px;
   line-height: 1;
@@ -415,7 +413,7 @@ h1 {
 }
 
 button {
-  padding: 10px;
+  padding: 15px;
   margin-top: 1rem;
   color: #050101;
   outline: none;
@@ -423,7 +421,7 @@ button {
   border: 1px solid rgba(251, 93, 119, 0.912);
   width: 9vw;
   cursor: pointer;
-  margin-left: 37.5rem;
+  margin-left: 42rem;
   background-color: rgba(251, 93, 119, 0.912);
   text-shadow: 0px 0px 5px rgba(255, 255, 255, 1),
     0px 0px 10px rgba(255, 255, 255, 1), 0px 0px 15px rgba(255, 255, 255, 1),
@@ -464,6 +462,7 @@ button:hover {
 .me:hover {
   font-size: 4rem;
 }
+
 
 .location {
   font-weight: bold;
