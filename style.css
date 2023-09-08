@@ -399,13 +399,10 @@ h1 {
   padding: 4px;
 }
 
-.input-text:invalid {
-  border-left: 10px solid #f00;
-}
 
-.input-text:invalid + .label::after {
-  color: #f00;
-  content: "X";
+.input-text:invalid + .label:after {
+  color: rgb(250, 247, 247);
+  /* content: "."; */
   font-family: arial;
   font-size: 14px;
   line-height: 1;
