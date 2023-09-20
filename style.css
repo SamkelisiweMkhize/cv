@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: rgba(96, 91, 94, 0.086);
   color: rgb(55, 55, 55);
   font-family: sans-serif;
 }
@@ -144,7 +144,7 @@ section {
 
 /* The actual timeline (the vertical ruler) */
 .timelin::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 6px;
   background-color: white;
@@ -164,13 +164,13 @@ section {
 
 /* The circles on the timeline */
 .contain::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: white;
-  border: 4px solid #FF9F55;
+  background-color: rgb(7, 7, 7);
+  border: 4px solid rgba(255, 192, 203, 0.71);
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -209,9 +209,9 @@ section {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid white;
+  border: medium solid pink;
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent rgba(255, 192, 203, 0.272) transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -220,13 +220,12 @@ section {
 }
 
 /* The actual content */
-.content {
+.contents {
   padding: 20px 30px;
-  background-color: white;
+  background-color:rgba(255, 182, 193, 0.278);
   position: relative;
   border-radius: 6px;
 }
-
 
 /* Add a blue color to the author */
 .author {
@@ -238,12 +237,10 @@ section {
   display: inline;
 }
 
-
 h1 {
   font-size: 50px;
   word-break: break-all;
 }
-
 
 /* Create four equal columns that floats next to each other */
 .column {
@@ -399,7 +396,6 @@ button:hover {
 .location {
   font-weight: bold;
 }
-
 
 @media screen and (max-width: 576px) {
   .logo {
@@ -566,31 +562,31 @@ button:hover {
   /* Place the timelime to the left */
   .timelin::after {
     left: 31px;
-    }
-    
-    /* Full-width containers */
-    .contain {
+  }
+
+  /* Full-width containers */
+  .contain {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
-    }
-    
-    /* Make sure that all arrows are pointing leftwards */
-    .contain::before {
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .contain::before {
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
-    }
-  
-    /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
-    left: 15px;
-    }
-    
-    /* Make all right containers behave like the left ones */
-    .right {
-    left: 0%;
-    }
   }
 
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
