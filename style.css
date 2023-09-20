@@ -135,72 +135,98 @@ section {
   color: rgb(255, 255, 255);
 }
 
-/* Slideshow container */
-.slideshow-container {
+/* The actual timeline (the vertical ruler) */
+.timelin {
   position: relative;
-  margin-top: 1rem;
-  font-size: x-large;
-  
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Slides */
-.mySlides {
-  display: none;
-  padding: 50px;
-  text-align: left;
-  background-color: rgba(249, 223, 227, 0.86);
-  padding-left: 7rem;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
+/* The actual timeline (the vertical ruler) */
+.timelin::after {
+  content: '';
   position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 10px;
-  color: #141312;
-  font-weight: bold;
-  font-size: 3rem;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
 }
 
-/* Position the "next button" to the right */
-.next {
+/* Container around content */
+.contain {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.contain::after {
+  content: '';
   position: absolute;
-  right: 0rem;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgb(249, 183, 194);
-  color: rgb(250, 245, 245);
-  font-size: xx-large;
-}
-
-/* The dot/bullet/indicator container */
-.dot-container {
-  text-align: center;
-  padding: 20px;
-  background: rgba(255, 112, 136, 0.492);
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: rgb(255, 112, 136);
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
   border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  z-index: 1;
 }
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
 
 /* Add a blue color to the author */
 .author {
@@ -208,111 +234,16 @@ section {
   margin-top: 5rem;
 }
 
-/* Remove extra left and right margins, due to padding */
-.row {
-  margin: 0 -5px;
-}
-
-.scroll {
-  margin-top: 7rem;
-  float: right;
-  margin-right: 15rem;
-  border: solid;
-}
-
-/* Three column layout */
-.side {
-  float: left;
-  width: 15%;
-  margin-top: 2rem;
-}
-
-.middle {
-  margin-top: 2.3rem;
-  float: left;
-  width: 70%;
-}
-
-/* Place text to the right */
-.right {
-  text-align: right;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* The bar container */
-.bar-container {
-  width: 100%;
-  background-color: #f1f1f1;
-  text-align: left;
-  color: rgb(251, 93, 120);
-}
-
-/* Individual bars */
-.bar-5 {
-  width: 90%;
-  height: 18px;
-  background-color: rgba(251, 93, 119, 0.421);
-}
-
-.bar-4 {
-  width: 95%;
-  height: 18px;
-  background-color: rgba(251, 93, 119, 0.423);
-}
-
-.bar-3 {
-  width: 40%;
-  height: 18px;
-  background-color: rgba(251, 93, 119, 0.526);
-}
-
-.bar-2 {
-  width: 50%;
-  height: 18px;
-  background-color: rgba(251, 93, 119, 0.489);
-}
-
-.bar-1 {
-  width: 40%;
-  height: 18px;
-  background-color: rgba(251, 93, 119, 0.519);
-}
-
 .sam {
   display: inline;
 }
 
-.samm {
-  border: solid;
-  background-color: rgba(251, 93, 119, 0.519);
-}
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
 
 h1 {
   font-size: 50px;
   word-break: break-all;
 }
 
-.row {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
 
 /* Create four equal columns that floats next to each other */
 .column {
@@ -468,6 +399,7 @@ button:hover {
 .location {
   font-weight: bold;
 }
+
 
 @media screen and (max-width: 576px) {
   .logo {
@@ -630,4 +562,35 @@ button:hover {
   .column {
     width: 100%;
   }
-}
+
+  /* Place the timelime to the left */
+  .timelin::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .contain {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .contain::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+  }
+
