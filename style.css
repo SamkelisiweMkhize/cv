@@ -197,7 +197,7 @@ section {
   right: 30px;
   border: medium solid white;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent rgba(255, 192, 203, 0.381);
 }
 
 /* Add arrows to the right container (pointing left) */
