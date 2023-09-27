@@ -227,11 +227,6 @@ section {
   border-radius: 6px;
 }
 
-/* Add a blue color to the author */
-.author {
-  color: rgba(188, 153, 183, 0.918);
-  margin-top: 5rem;
-}
 
 .sam {
   display: inline;
@@ -261,7 +256,7 @@ h1 {
 }
 
 .ref {
-  margin-top: 2rem;
+  margin-top: 4.4rem;
   text-align: center;
 }
 
@@ -390,7 +385,7 @@ button:hover {
 }
 
 .me:hover {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .location {
