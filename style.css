@@ -222,11 +222,10 @@ section {
 /* The actual content */
 .contents {
   padding: 20px 30px;
-  background-color:rgba(255, 182, 193, 0.278);
+  background-color: rgba(255, 182, 193, 0.278);
   position: relative;
   border-radius: 6px;
 }
-
 
 .sam {
   display: inline;
@@ -440,33 +439,6 @@ button:hover {
     font-size: 1rem;
     background-color: rgba(249, 26, 63, 0.539);
     color: whitesmoke;
-  }
-
-  .slideshow-container {
-    font-size: 1.5rem;
-  }
-
-  .mySlides {
-    display: none;
-    padding: 50px;
-    text-align: left;
-    font-size: medium;
-  }
-
-  .next {
-    border-radius: 1px 0 0 1px;
-  }
-
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 2px;
-    color: #141312;
-    font-size: 1.5rem;
-    border-radius: 0 1px 1px 0;
   }
 
   .image img {
