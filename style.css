@@ -340,12 +340,12 @@ button {
   color: #050101;
   outline: none;
   background: transparent;
-  border: 1px solid rgba(251, 93, 119, 0.912);
+  border: 1px solid rgb(255, 116, 70);
   border-radius: 3px;
-  width: 9vw;
+  width: 50vw;
   cursor: pointer;
-  margin-left: 43rem;
-  background-color: rgba(251, 93, 119, 0.912);
+  margin-left: 4rem;
+  background-color: rgb(255, 116, 70);
   text-shadow: 0px 0px 5px rgba(255, 255, 255, 1),
     0px 0px 10px rgba(255, 255, 255, 1), 0px 0px 15px rgba(255, 255, 255, 1),
     0px 0px 20px rgb(242, 245, 241), 0px 0px 30px rgb(224, 218, 222),
@@ -355,7 +355,7 @@ button {
 
 button:hover {
   font-size: 1rem;
-  background-color: rgba(251, 93, 119, 0.912);
+  background-color: rgb(255, 116, 70);
   color: rgb(245, 243, 243);
 }
 
