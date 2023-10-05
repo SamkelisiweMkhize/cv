@@ -80,7 +80,7 @@ section {
 }
 
 .introduction {
-  background-color:rgba(248, 90, 37, 0.165);
+  background-color: rgba(248, 90, 37, 0.165);
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -389,7 +389,6 @@ button:hover {
 .location {
   font-weight: bold;
 }
-
 
 .new_home_web .text-blk.subHeading {
   text-align: center;
@@ -737,7 +736,6 @@ button:hover {
     padding-bottom: 5px;
   }
 
-
   a:hover {
     font-size: 1rem;
     background-color: rgba(249, 26, 63, 0.539);
@@ -775,7 +773,7 @@ button:hover {
 
   button:hover {
     font-size: 1rem;
-    background-color:  rgb(255, 116, 70);
+    background-color: rgb(255, 116, 70);
     color: rgb(248, 243, 243);
   }
 
@@ -859,14 +857,16 @@ button:hover {
     left: 0%;
   }
 
-  .new_home_web .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-5.wk-ipadp-10 {
+  .new_home_web
+    .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-5.wk-ipadp-10 {
     margin-top: 60px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
   }
 
-  .new_home_web .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-7.wk-ipadp-10.line {
+  .new_home_web
+    .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-7.wk-ipadp-10.line {
     padding-top: 0px;
     padding-right: 20px;
     padding-bottom: 60px;
@@ -877,14 +877,16 @@ button:hover {
     justify-content: center;
   }
 
-  .new_home_web .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-12.wk-ipadp-12 {
+  .new_home_web
+    .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-12.wk-ipadp-12 {
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
   }
 
-  .new_home_web .responsive-cell-block.wk-ipadp-6.wk-tab-12.wk-mobile-12.wk-desk-6 {
+  .new_home_web
+    .responsive-cell-block.wk-ipadp-6.wk-tab-12.wk-mobile-12.wk-desk-6 {
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
@@ -896,7 +898,8 @@ button:hover {
     align-items: center;
   }
 
-  .new_home_web .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-5.wk-ipadp-10 {
+  .new_home_web
+    .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-5.wk-ipadp-10 {
     width: 100%;
     margin-top: 30px;
     margin-right: 0px;
@@ -904,7 +907,8 @@ button:hover {
     margin-left: 0px;
   }
 
-  .new_home_web .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-7.wk-ipadp-10.line {
+  .new_home_web
+    .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-7.wk-ipadp-10.line {
     width: 100%;
     padding-top: 0px;
     padding-right: 0px;
@@ -945,7 +949,8 @@ button:hover {
     height: 200px;
   }
 
-  .new_home_web .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-12.wk-ipadp-12 {
+  .new_home_web
+    .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-12.wk-ipadp-12 {
     width: 100%;
   }
 
@@ -960,7 +965,8 @@ button:hover {
     font-size: 30px;
   }
 
-  .new_home_web .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-5.wk-ipadp-10 {
+  .new_home_web
+    .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-5.wk-ipadp-10 {
     flex-wrap: wrap;
   }
 
@@ -1008,8 +1014,8 @@ button:hover {
     height: 45px;
   }
 
-  .new_home_web .responsive-cell-block.wk-ipadp-6.wk-tab-12.wk-mobile-12.wk-desk-6 {
+  .new_home_web
+    .responsive-cell-block.wk-ipadp-6.wk-tab-12.wk-mobile-12.wk-desk-6 {
     margin: 0 0 10px 0;
   }
 }
-
