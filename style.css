@@ -226,7 +226,6 @@ section {
   border-radius: 6px;
 }
 
-
 /* Create four equal columns that floats next to each other */
 .column {
   float: left;
@@ -240,8 +239,7 @@ section {
   clear: both;
 }
 
-Content
-.content {
+Content .content {
   padding: 10px;
 }
 
@@ -249,7 +247,6 @@ Content
   margin-top: 4.4rem;
   text-align: center;
 }
-
 
 *,
 *:after,
@@ -323,7 +320,6 @@ button:hover {
   background-color: rgb(255, 116, 70);
   color: rgb(245, 243, 243);
 }
-
 
 .me {
   font-size: xxx-large;
@@ -706,14 +702,6 @@ button:hover {
 
   .location {
     font-size: x-small;
-  }
-
-  .hero {
-    width: 100vw;
-    height: 50vh;
-    align-items: left;
-    justify-content: left;
-    padding-top: 15rem;
   }
 
   .input-text {
