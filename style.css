@@ -244,8 +244,9 @@ Content .content {
 }
 
 .ref {
-  margin-top: 4.4rem;
+  margin-top: 7rem;
   text-align: center;
+  font-style: italic;
 }
 
 *,
@@ -277,10 +278,6 @@ Content .content {
   margin-left: 3rem;
 }
 
-.input-text:focus {
-  border: none;
-  background-color: #fafafa;
-}
 
 .label {
   position: absolute;
