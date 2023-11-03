@@ -278,7 +278,6 @@ Content .content {
   margin-left: 3rem;
 }
 
-
 .label {
   position: absolute;
   opacity: 0;
@@ -641,7 +640,7 @@ button:hover {
 }
 
 hr {
-border: solid;
+  border: solid;
 }
 
 @media screen and (max-width: 576px) {
